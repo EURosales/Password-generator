@@ -92,7 +92,7 @@ input[type='number'] {
 	width: 100%;
 	border-radius: 4px;
 
-	#password-generated {
+	#passwordGenerated {
 		letter-spacing: 2px;
 		font-family: $Qs;
 		font-weight: 600;
@@ -100,7 +100,6 @@ input[type='number'] {
 		padding: 0 0.5em;
 		word-wrap: break-word;
 		max-width: calc(100% - 60px);
-		
 	}
 
 	.btn {
@@ -130,7 +129,10 @@ input[type='number'] {
 	font-family: $Is;
 	font-weight: 400;
 	font-size: 18px;
-	border: 2px solid rgb(255, 255, 255)
+	border: 2px solid rgb(255, 255, 255);
 }
 
+.swal-title {
+	font-family: $Qs;
+}
 @import 'responsive';
