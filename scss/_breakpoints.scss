@@ -1,0 +1,61 @@
+@media (max-width: 1000px) {
+	.generator-container {
+		width: 48%;
+	}
+}
+
+@media (max-width: 820px) {
+	.generator-container {
+		width: 60%;
+	}
+}
+
+@media (max-width: 700px) {
+	.generator-container {
+		width: 70%;
+	}
+}
+
+@media (max-width: 570px) {
+	.generator-container {
+		width: 80%;
+	}
+}
+
+@media (max-width: 490px) {
+	.generator-container {
+		width: 85%;
+	}
+}
+
+@media (max-width: 445px) {
+	.generator-container {
+		.result-container {
+			font-size: 16px;
+		}
+		#passwordGenerated {
+			letter-spacing: 1px;
+		}
+	}
+}
+
+@media (max-width: 410px) {
+	.inner-container {
+		padding: 0.5rem;
+	}
+	.generator-container {
+		padding: 0.5rem;
+	}
+}
+
+@media (max-width: 395px) {
+	.generator-container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 365px) {
+	#passwordGenerated {
+		max-width: calc(100% - 60px) !important;
+	}
+}

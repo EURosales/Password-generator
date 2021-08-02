@@ -32,11 +32,11 @@ body {
 	border-radius: 8px;
 	border: 3px solid white;
 	padding: 1rem;
-	max-width: 60%;
+	//max-width: 60%;
 	//inner responsive
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: center;
 	//glow effect
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
@@ -135,4 +135,4 @@ input[type='number'] {
 .swal-title {
 	font-family: $Qs;
 }
-@import 'responsive';
+@import 'breakpoints';
