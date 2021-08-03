@@ -60,7 +60,11 @@
 
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="./js/main.js"></script>
-        <script src="./js/service-worker.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('./js/service-worker.js');
+            }
+        </script>
     </body>
 
 </html>
