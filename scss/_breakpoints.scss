@@ -1,4 +1,10 @@
-@media (max-width: 1000px) {
+@media (min-width: 1130px) {
+	.generator-container {
+		width: 30%;
+	}
+}
+
+@media (max-width: 1130px) {
 	.generator-container {
 		width: 48%;
 	}

@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
             integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="manifest" href="./js/manifest.json">
         <link rel="stylesheet" href="css/style.min.css">
         <title>New Password</title>
     </head>
@@ -29,7 +30,7 @@
                 <div class="settings-container">
                     <div class="setting">
                         <label for="length">Password length:</label>
-                        <input type="number" id="length" min="4" max="22" value="8">
+                        <input type="number" id="length" value="8" min="4" max="20" required>
                     </div>
                     <div class="setting">
                         <label for="length">Include uppercase?</label>
@@ -53,6 +54,9 @@
                 </button>
             </div>
         </div>
+        <p class="contact">Made by <a href="eduardo-rosales-portfolio.netlify.app">Eduardo Rosales</a> - <a
+                href="https://github.com/EURosales">EURosales (Github)</a></p>
+        <script src="./js/service-worker.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="./js/main.js"></script>
     </body>

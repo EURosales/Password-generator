@@ -8,7 +8,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
 }
 
 .title {
@@ -32,7 +31,7 @@ body {
 	border-radius: 8px;
 	border: 3px solid white;
 	padding: 1rem;
-	//max-width: 60%;
+	margin: 4.5rem 0;
 	//inner responsive
 	display: flex;
 	flex-direction: column;
@@ -130,6 +129,21 @@ input[type='number'] {
 	font-weight: 400;
 	font-size: 18px;
 	border: 2px solid rgb(255, 255, 255);
+}
+
+.contact {
+	text-align: center;
+	text-decoration: none;
+	font-family: $Qs;
+	font-size: 16px;
+	color: #ffffff5d;
+	position: absolute;
+	bottom: 15px;
+
+	a {
+		text-decoration: none;
+		color: #ffffffb4;
+	}
 }
 
 .swal-title {
