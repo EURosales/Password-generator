@@ -50,7 +50,13 @@ const ramdomCharFunctions = {
 }
 
 passwordGeneratorBtn.addEventListener('click', () => {
-    const passwordLength = +length.value;
+    let passwordLength;
+    if (length.value > 20) {
+        passwordLength = 20;
+    } else {
+        passwordLength = +length.value;
+    }
+
     const hasUpper = upperCheck.checked;
     const hasLower = lowerCheck.checked;
     const hasNumber = numbersCheck.checked;
