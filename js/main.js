@@ -38,7 +38,7 @@ const randomNumChar = () => {
 }
 
 const randomSymbolChar = () => {
-    const symbols = '!@#$%&*=<?>/';
+    const symbols = '@#$%&<?>/';
     return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
@@ -47,6 +47,10 @@ const ramdomCharFunctions = {
     lower: randomLowerChar,
     number: randomNumChar,
     symbol: randomSymbolChar
+}
+
+const randomizer = (string) => {
+    return string.sort(() => Math.random() - 0.5);
 }
 
 passwordGeneratorBtn.addEventListener('click', () => {
@@ -62,7 +66,9 @@ passwordGeneratorBtn.addEventListener('click', () => {
     const hasNumber = numbersCheck.checked;
     const hasSymbol = symbolCheck.checked;
 
-    output.innerText = generatePassword(passwordLength, hasUpper, hasLower, hasNumber, hasSymbol);
+    let randomizedString = randomizer(Array.from(generatePassword(passwordLength, hasUpper, hasLower, hasNumber, hasSymbol)));
+    output.innerText = randomizedString.join("");
+
 });
 
 const generatePassword = (length, upper, lower, number, symbol) => {
@@ -86,3 +92,4 @@ const generatePassword = (length, upper, lower, number, symbol) => {
 
     return generatedPassword.slice(0, length);
 }
+
