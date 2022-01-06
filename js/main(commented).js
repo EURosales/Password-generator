@@ -10,19 +10,29 @@ const symbolCheck = document.getElementById('symbols');
 //btn generator
 const passwordGeneratorBtn = document.getElementById('btnGenerator');
 
-//Clipboard
-clipboardBtn.addEventListener('click', () => {
+//Clipboard (old method)
+// clipboardBtn.addEventListener('click', () => {
+//     const password = output.innerText;
+//     const textArea = document.createElement('textArea');
+
+//     if (!password) { return; }
+
+//     textArea.value = password;
+//     document.body.appendChild(textArea);
+//     textArea.select();
+//     document.execCommand('copy');
+//     textArea.remove();
+
+//     swal({
+//         title: "Your new password has been saved in your clipboard!",
+//         icon: "success"
+//     });
+// });
+
+//Clipboard (New Method)
+clipboardBtn.addEventListener('click', () =>{
     const password = output.innerText;
-    const textArea = document.createElement('textArea');
-
-    if (!password) { return; }
-
-    textArea.value = password;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand('copy');
-    textArea.remove();
-
+    navigator.clipboard.writeText(password);
     swal({
         title: "Your new password has been saved in your clipboard!",
         icon: "success"

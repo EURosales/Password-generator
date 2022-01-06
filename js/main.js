@@ -7,24 +7,6 @@ const numbersCheck = document.getElementById('numbers');
 const symbolCheck = document.getElementById('symbols');
 const passwordGeneratorBtn = document.getElementById('btnGenerator');
 
-// clipboardBtn.addEventListener('click', () => {
-//     const password = output.innerText;
-//     const textArea = document.createElement('textArea');
-
-//     if (!password) { return; }
-
-//     textArea.value = password;
-//     document.body.appendChild(textArea);
-//     textArea.select();
-//     document.execCommand('copy');
-//     textArea.remove();
-
-//     swal({
-//         title: "Your new password has been saved in your clipboard!",
-//         icon: "success"
-//     });
-// });
-
 clipboardBtn.addEventListener('click', () =>{
     const password = output.innerText;
     navigator.clipboard.writeText(password);
